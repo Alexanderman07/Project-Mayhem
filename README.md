@@ -22,11 +22,13 @@
  > Project Mayhem is a single-player, text based rpg set in UCR. In the game, you play as a student who is tasked with taking down all of the departments and making the BCOE college the best department at UCR. With the help of your mentor, Professor N, you must navigate through UCR and take down students from opposing colleges. 
  >
  > The project that we have chosen is interesting to us because we all enjoy rpg games and we have never done a project around a game before. 
- > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
- >   * [toolname](link) - Short description
- > * What will be the input/output of your project? What are the features that the project provides?
  > 
- > This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
+ > We plan to create the project using C++ and do all of our development using Vim within UCR’s hammer server. On top of that, we will be using Git and GitHub which will allow us to work as a team and collaborate on the development of our project.
+ > 
+ > The input for the project will be designated keys to interact with the text prompts. As a user of our project, you would be able to create a character to your own liking. The output of the project will be more text prompts that will allow for further input and progression in the game. Our RPG game will feature a campus like setting where the user can progress and “battle” other departments. If given enough time, we would like to go ahead and add visuals and graphics to our final game. 
+ > [C++](https://www.cplusplus.com/)
+ > [VIM](https://www.vim.org/)
+ >
  > 
  > 
  > ## Phase II
