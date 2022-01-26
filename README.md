@@ -20,6 +20,7 @@
 
 ## Project Description
  > Project Mayhem is a single-player, text based rpg set in UCR. In the game, you play as a student who is tasked with taking down all of the departments and making the BCOE college the best department at UCR. With the help of your mentor, Professor N, you must navigate through UCR and take down students from opposing colleges. 
+ >
  > The project that we have chosen is interesting to us because we all enjoy rpg games and we have never done a project around a game before. 
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
  >   * [toolname](link) - Short description
