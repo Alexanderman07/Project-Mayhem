@@ -49,7 +49,7 @@
 >
 > **Diagram Description:**
 >
->The Class Diagram depicts the core classes and features of project mayhem. As an RPG, the game will focus mainly on you, the player. A player will have access to 4 attribute >categories: Luck, Strength, Health, and IQ. These attributes will affect how you engage in combat. Players will be able to level up their attribute points as they progress >through the game. You will have freedom to travel to different areas of the map to progress the story, buy/sell items, or engage in optional content. Your attributes will >determine how you combat the game’s enemies. The foes you face in Project Mayhem will vary in strengths based on their school affiliation. 
+>The Class Diagram depicts the core classes and features of project mayhem. As an RPG, the game will focus mainly on you, the player. A player will have access to 4 attribute categories: Luck, Strength, Health, and IQ. These attributes will affect how you engage in combat. Players will be able to level up their attribute points as they progress through the game. You will have freedom to travel to different areas of the map to progress the story, buy/sell items, or engage in optional content. Your attributes will determine how you combat the game’s enemies. The foes you face in Project Mayhem will vary in strengths based on their school affiliation. 
  
  > ## Phase III
  > You will need to schedule a check-in for the second scrum meeting with a reader (using Calendly). Your entire team must be present. This meeting will occur on week 8 but NOT during lab time.
