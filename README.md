@@ -44,7 +44,6 @@
  >     * How work will be divided between the team members
 
 ## Class Diagram
- > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
 >
 > ![UML Diagram](https://i.imgur.com/TuWFcnb.png)
 >
