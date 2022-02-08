@@ -47,7 +47,8 @@
  > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
 >
 > ![UML Diagram](https://i.imgur.com/TuWFcnb.png)
-> 
+
+>The Class Diagram depicts the core classes and features of project mayhem. As an RPG, the game will focus mainly on you, the player. A player will have access to 4 attribute >categories: Luck, Strength, Health, and IQ. These attributes will affect how you engage in combat. Players will be able to level up their attribute points as they progress >through the game. You will have freedom to travel to different areas of the map to progress the story, buy/sell items, or engage in optional content. Your attributes will >determine how you combat the game’s enemies. The foes you face in Project Mayhem will vary in strengths based on their school affiliation. 
  
  > ## Phase III
  > You will need to schedule a check-in for the second scrum meeting with a reader (using Calendly). Your entire team must be present. This meeting will occur on week 8 but NOT during lab time.
