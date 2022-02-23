@@ -60,7 +60,11 @@
  >     * How did the design pattern help you write better code?
  >   * An updated class diagram that reflects the design pattern(s) you used. You may combine multiple design patterns into one diagram if you'd like, but it needs to be clear which portion of the diagram represents which design pattern (either in the diagram or in the description).
  >   * Make sure your README file (and Project board) are up-to-date reflecting the current status of your project. Previous versions of the README file should still be visible through your commit history.
-> 
+>
+> ## Updated Class Diagram
+>
+>![UML Diagram](https://i.imgur.com/TuWFcnb.png)
+>
 > During the meeting with your reader you will discuss: 
  > * How effective your last sprint was (each member should talk about what they did)
  > * Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint
