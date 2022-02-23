@@ -63,7 +63,7 @@
 >
 > ## Updated Class Diagram
 >
->![UML Diagram](https://i.imgur.com/oEEPiyt.png)
+>![UML Diagram](https://i.imgur.com/oRCKFPQ.png)
 >
 > During the meeting with your reader you will discuss: 
  > * How effective your last sprint was (each member should talk about what they did)
