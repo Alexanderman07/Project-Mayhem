@@ -45,7 +45,7 @@
 
 ## Class Diagram
 >
-> ![UML Diagram](https://i.imgur.com/BhAhL74.png)
+> ![UML Diagram](https://imgur.com/a/Hs3GMCU)
 >
 > **Diagram Description:**
 >
