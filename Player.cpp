@@ -30,7 +30,9 @@ void Player::Item_Bag(ItemBag n){
 }
 
 void Player::Open_map(){
-
+ Map playerMap;
+  cout << "You have opened up the map! You can travel to different locations across campus! Press Y to travel to your chosen location!" << endl;
+  playerMap.travel_to();
 }
 
 
