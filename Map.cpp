@@ -1,6 +1,5 @@
 #include <iostream>
 #include "Map.h"
-#include "Building.h"
 using namespace std;
 
 std::string Map::get_location(Building x){
