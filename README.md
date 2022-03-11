@@ -64,5 +64,5 @@ We chose to implement the composite design pattern for our Enemy classes. We cho
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  > The project was tested using incremental unit tests. These unit tests were made to test the functionality of major functions.
- https://i.imgur.com/fiOWbt4.jpg
+ ![testing screenshot](https://i.imgur.com/fiOWbt4.jpg)
  
