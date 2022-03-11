@@ -4,11 +4,8 @@
 #include <iostream>
 #include "Building.h"
 #include <string>
-#include <vector>
 
 class Map {
-  private:
-      std::vector<std::string> locationList;
   public:
       std::string get_location(Building x);
       void travel_to(Building &x);

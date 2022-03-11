@@ -59,7 +59,7 @@ while(flag != 1){
     flag++;
   }
   else{
-    cout << "Not a valid location, try again: " << endl;
+    cout << "Not a valid location, Please enter a valid number: " << endl;
     cout << "1 - Office Hours(shop)" << endl;
     cout << "2 - Department Head" << endl;
     cout << "3 - SRC Arena" << endl;

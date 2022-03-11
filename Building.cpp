@@ -13,11 +13,6 @@ int Building::get_ID(){
     return building_id;
 }
 
-void Building::pre_save(Player n){
-  n.save();
-  std::cout << "Progress saved." << std::endl;
-}
-
 void Building::welcomeMessage(int n){
   if(n == 5){
     std::cout << "Welcome to Orientation!" << std::endl;
@@ -32,6 +27,6 @@ void Building::welcomeMessage(int n){
     std::cout << "Welcome to the building of the Department Head." << std::endl;
   }
   if(n == 1){
-    std::cout << "Welcome to Office Hours, here you can shop and gain items to help boost your character's attributes!" << std::endl;
+    std::cout << "Welcome to Office Hours, here you can shop for items to help boost your character's attributes!" << std::endl;
   }
 }
