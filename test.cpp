@@ -5,7 +5,8 @@
 #include"CritSpecialist.h"
 #include"DamageSpecialist.h"
 #include"DodgeSpecialist.h"
-
+#include "ItemBag.h"
+#include "Category.h"
 #include "Enemy_test.hpp"
 
 #include "gtest/gtest.h"

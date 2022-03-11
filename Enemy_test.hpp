@@ -7,6 +7,8 @@
 #include"CritSpecialist.h"
 #include"DamageSpecialist.h"
 #include"DodgeSpecialist.h"
+#include "ItemBag.h"
+#include "Category.h"
 #include <memory>
 #include <utility>
 
@@ -47,7 +49,17 @@ TEST(EnemyTest, EnemyType){
         EXPECT_EQ(baddy->getCategoryType(),"BCOE" );
 }
 
+TEST(ItemTest, getHeals){
+int num = 1;
+set_light_heal_amount(num);
+EXPECT_EQ(get_light_heal_amount(), num);
+}
 
+TEST(CategoryTest, getDamage){
+int num = 2;
+set_damage(num);
+EXPECT_EQ(get_damage(), num);
+}
 
 
 #endif
