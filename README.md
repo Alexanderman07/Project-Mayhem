@@ -56,6 +56,7 @@ We chose to implement the composite design pattern for our Enemy classes. We cho
  > Screenshots of the input/output after running your application
  ## Installation/Usage
  > Instructions on installing and running your application
+ All the user needs to do to install the game is to hit the run button located at the top right corner of the screen on replit. Users will be prompted to enter in a name, first name or first and last name, and a category type they would like to use for the entirety of the game. During battle, five action options will be given to the player to interact with the game during a battle against a grunt and an enemy boss. After the player's first encounter with an enemy grunt, they will have the option to explore different buildings at UCR and buy items they will need for battle using the '1', '2', '3', '4', and '5' number keys. 
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  > The project was tested using incremental unit tests. These unit tests were made to test the functionality of major functions.
