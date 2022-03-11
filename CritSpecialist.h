@@ -1,19 +1,19 @@
 #include"Enemy.h"
 
-#ifndef DAMAGESPECIALIST_H
-#define DAMAGESPECIALIST_H
+#ifndef CRITSPECIALIST_H
+#define CRITSPECIALIST_H
 
-class DamageSpecialist : public Enemy {
+class CritSpecialist : public Enemy {
 private:
     std::shared_ptr<Enemy> enemyObject;
-    int strengthMult = 2;
-    std::string type = "CHASS";
+    int IQMult = 2;
+    std::string type = "BCOE";
 public:
-    DamageSpecialist(std::shared_ptr<Enemy> enemyType) : Enemy() {
+    CritSpecialist(std::shared_ptr<Enemy> enemyType) : Enemy() {
         enemyObject = enemyType;
-        }
-    virtual void modify(){
-        enemyObject->setDamage(enemyObject->getDamage() * strengthMult);
+    }
+    virtual void modify() {
+        enemyObject->setCriticalHit(enemyObject->getCriticalHit() * IQMult);
         enemyObject->setCategoryType(type);
     }
 };

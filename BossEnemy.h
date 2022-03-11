@@ -1,20 +1,20 @@
 #include"Enemy.h"
 
-#ifndef DAMAGESPECIALIST_H
-#define DAMAGESPECIALIST_H
 
-class DamageSpecialist : public Enemy {
+#ifndef BOSSENEMY_H
+#define BOSSENEMY_H
+class Boss : public Enemy {
 private:
-    std::shared_ptr<Enemy> enemyObject;
-    int strengthMult = 2;
-    std::string type = "CHASS";
+    int mult = 2;
 public:
-    DamageSpecialist(std::shared_ptr<Enemy> enemyType) : Enemy() {
-        enemyObject = enemyType;
-        }
-    virtual void modify(){
-        enemyObject->setDamage(enemyObject->getDamage() * strengthMult);
-        enemyObject->setCategoryType(type);
+    Boss(int value) : Enemy() { this->mult = value; }
+
+    virtual void modify() { 
+        setDamage(mDamage * mult);
+        setCriticalHit(mCriticalHit * mult);
+        setDodgeCounter(mDodgeCounter * mult);
+        setHealth(mHealth * mult);
     }
+    
 };
 #endif
