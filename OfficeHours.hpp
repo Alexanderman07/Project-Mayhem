@@ -98,6 +98,7 @@ class OfficeHours: public Building{
             x.set_medium_heal_amount(medium_heals);
             }
             if(max_heals > 0){
+	    std::cout << "You've purchased ";
             std::cout << max_heals << " max heals.";
             x.set_max_heal_amount(max_heals);
             }
@@ -210,7 +211,7 @@ class OfficeHours: public Building{
             int count = x.get_light_heal_amount();
             int neg = 0 - light_heals;
             count = count - light_heals;
-            std::cout << "You know have " << count << " light heals in your item bag." << std::endl;
+            std::cout << "You now have " << count << " light heals in your item bag." << std::endl;
             x.set_light_heal_amount(neg);
             }
             if(medium_heals > 0){
@@ -219,7 +220,7 @@ class OfficeHours: public Building{
             int count = x.get_meduim_heal_amount();
             int neg = 0 - medium_heals;
             count = count - medium_heals;
-            std::cout << "You know have " << count << " medium heals in your item bag." << std::endl;
+            std::cout << "You now have " << count << " medium heals in your item bag." << std::endl;
             x.set_medium_heal_amount(neg);
             }
             if(max_heals > 0){
@@ -228,7 +229,7 @@ class OfficeHours: public Building{
             int count = x.get_max_heal_amount();
             int neg = 0 - max_heals;
             count = count - max_heals;
-            std::cout << "You know have " << count << " max heals in your item bag." << std::endl;
+            std::cout << "You now have " << count << " max heals in your item bag." << std::endl;
             x.set_max_heal_amount(neg);
             }
             if(strength_pills > 0){
@@ -237,7 +238,7 @@ class OfficeHours: public Building{
             int count = x.get_strength_enhancementPills_amount();
             int neg = 0 - strength_pills;
             count = count - strength_pills;
-            std::cout << "You know have " << count << " strength enhancement pills in your item bag." << std::endl;
+            std::cout << "You now have " << count << " strength enhancement pills in your item bag." << std::endl;
             x.set_strength_enhancementPills_amount(neg);
             }
             if(top_ramen > 0){
@@ -246,7 +247,7 @@ class OfficeHours: public Building{
             int count = x.get_top_ramen_meals_amount();
             int neg = 0 - top_ramen;
             count = count - top_ramen;
-            std::cout << "You know have " << count << " top ramen meals in your item bag." << std::endl;
+            std::cout << "You now have " << count << " top ramen meals in your item bag." << std::endl;
             x.set_top_ramen(neg);
             }
             if(adderall > 0){
@@ -255,7 +256,7 @@ class OfficeHours: public Building{
             int count = x.get_adderall_count_amount();
             int neg = 0 - adderall;
             count = count - adderall;
-            std::cout << "You know have " << count << " adderall in your item bag." << std::endl;
+            std::cout << "You now have " << count << " adderall in your item bag." << std::endl;
             x.set_adderall_amount(neg);
             }
             if(liquid_vials > 0){
@@ -264,7 +265,7 @@ class OfficeHours: public Building{
              int count = x.get_liquid_luck_vials();
             int neg = 0 - liquid_vials;
             count = count - liquid_vials;
-            std::cout << "You know have " << count << " liquid vials in your item bag." << std::endl; 
+            std::cout << "You now have " << count << " liquid vials in your item bag." << std::endl; 
             x. set_liquid_luck(neg);
             }
         }
