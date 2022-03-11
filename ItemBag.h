@@ -22,7 +22,6 @@ class ItemBag{
     int strength_enhancementPills;
     int top_ramen_meals;
     int liquid_luck_vials;
-    int used_textbook;
     
     void set_light_heal_amount(int amount);
     void set_medium_heal_amount(int amount);
@@ -31,7 +30,6 @@ class ItemBag{
     void set_strength_enhancementPills_amount(int amount);
     void set_top_ramen(int amount);
     void set_liquid_luck(int amount);
-    void set_used_textbook_amount(int amount);
     int get_light_heal_amount();
     int get_meduim_heal_amount();
     int get_max_heal_amount();
@@ -39,7 +37,6 @@ class ItemBag{
     int get_strength_enhancementPills_amount();
     int get_top_ramen_meals_amount();
     int get_liquid_luck_vials();
-    int get_used_textbook_amount();
 
   private:
     const int LIGHT_HEAL_VALUE = 10;

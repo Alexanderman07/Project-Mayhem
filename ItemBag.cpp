@@ -12,7 +12,6 @@ ItemBag::ItemBag(){
   strength_enhancementPills = 0;
   top_ramen_meals = 0;
   liquid_luck_vials = 0;
-  used_textbook = 0;
 }
 
 
@@ -163,9 +162,6 @@ void ItemBag::use_liquid_luck(Category c){
     void ItemBag::set_liquid_luck(int amount){
       liquid_luck_vials += amount;
     }
-    void ItemBag::set_used_textbook_amount(int amount){
-      used_textbook += amount;
-    }
     int ItemBag::get_light_heal_amount() {
       return light_heal;
     }
@@ -187,6 +183,4 @@ void ItemBag::use_liquid_luck(Category c){
     int ItemBag::get_strength_enhancementPills_amount(){
       return strength_enhancementPills;
     }
-    int ItemBag::get_used_textbook_amount(){
-      return used_textbook;
-    }
+
