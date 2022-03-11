@@ -7,6 +7,7 @@
 class ItemBag{
   public:
     ItemBag();
+    void getItems(Category c);
     void use_light_potion(Category c);
     void use_medium_potion(Category c);
     void use_max_potion(Category c);

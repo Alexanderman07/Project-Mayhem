@@ -17,8 +17,8 @@ class Category{
     int max_health;
     int max_dodgeandcounter;
     int max_damage;
-    
     int max_criticalhit;
+
     std::string get_category_type();
     void set_category_type(std::string s);
 
