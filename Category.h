@@ -1,5 +1,4 @@
 #include<iostream>
-#include "Player.h"
 #ifndef CATEGORY_H
 #define CATEGORY_H
 
