@@ -10,8 +10,8 @@ class Map {
   private:
       std::vector<std::string> locationList;
   public:
-      string get_location(Building x);
-      void travel_to();
+      std::string get_location(Building x);
+      void travel_to(Building &x);
       void move_on(int &buildingID);
       void move_back(int &buildingID);
 };

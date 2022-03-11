@@ -6,6 +6,7 @@ using namespace std;
 Player:: Player() {
   Player_name = "";
   player_category.set_category_type(" ");
+  int money = 0;
 }
 
 void Player::set_name(string n){
@@ -16,23 +17,30 @@ string Player::get_name(){
   return Player_name;
 }
 
+void Player::set_money(int n){
+  this->money = n;
+}
+
+int Player::get_money(){
+  return this->money;
+}
 
 void Player::Item_Bag(ItemBag n){
 
-  cout << "Light Heals: " << n.light_heal << endl;
-  cout << "Medium Heals: " << n.medium_heal << endl;
-  cout << "Max Heals: " << n.max_heal << endl;
-  cout << "Adderall Count: " << n.adderall_count << endl;
-  cout << "Strength Enhancement Pills: " << n.strength_enhancementPills << endl;
-  cout << "Top Ramen Meals: " << n.top_ramen_meals << endl;
-  cout << "Liquid Luck Vials: " << n.liquid_luck_vials << endl;
-  cout << "Used Textbooks: " << n.used_textbook << endl;
+  cout << "Light Heals: " << n.get_light_heal_amount() << endl;
+  cout << "Medium Heals: " << n.get_meduim_heal_amount() << endl;
+  cout << "Max Heals: " << n.get_max_heal_amount() << endl;
+  cout << "Adderall Count: " << n.get_adderall_count_amount() << endl;
+  cout << "Strength Enhancement Pills: " << n.get_strength_enhancementPills_amount() << endl;
+  cout << "Top Ramen Meals: " << n.get_top_ramen_meals_amount() << endl;
+  cout << "Liquid Luck Vials: " << n.get_liquid_luck_vials() << endl;
+  cout << "Used Textbooks: " << n.get_used_textbook_amount() << endl;
 }
 
 void Player::Open_map(){
  Map playerMap;
-  cout << "You have opened up the map! You can travel to different locations across campus! Press Y to travel to your chosen location!" << endl;
-  playerMap.travel_to();
+  cout << "You have opened up the map! You can travel to different locations across campus!" << endl;
+  cout << endl;
 }
 
 
@@ -47,7 +55,7 @@ void Player::Open_menu(Player n){
   }
 
   if(input == "s"){
-    n.save(n);
+    save(n);
   }
   else{
     User_guide();
@@ -55,13 +63,13 @@ void Player::Open_menu(Player n){
 }
 
 void Player::User_guide(){
-
+  cout << endl;
   cout <<  "Battle System Controls" << endl;
   cout <<  "1 - light attack" << endl;
   cout <<  "2 - medium attack" << endl;
   cout <<  "3 - powerful attack" << endl;
 
-
+  cout << endl;
   cout << "Item Bag Controls" << endl;
   cout << "a - access item bag" << endl;
   cout << "1 - use light potion" << endl;
@@ -73,14 +81,12 @@ void Player::User_guide(){
   cout << "7 - use liquid luck" << endl;
 }
 
-int Player::money(int n){
-  int currentMoney = 0;   
-  currentMoney += n;
-  return currentMoney;
+void Player::addMoney(int n){
+  money += n;
 }
 
 void Player::save(Player n){
-  Category savePlayerCategory = n.player_category;
-  int saveMoney = n.money(0); 
+  Category savePlayerCategory = player_category;
+  int saveMoney = get_money(); 
   cout << "Progress saved." << endl;
 }

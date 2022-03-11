@@ -2,6 +2,8 @@
 #define _BUILDING_H
 #include <iostream>
 #include <string>
+#include "Player.h"
+#include "Map.h"
 
 class Building{
   private:
@@ -10,7 +12,7 @@ class Building{
       Building();
       void set_id(int n);
       int get_ID();
-      void pre_save();
-      std::string welcomeMessage();
+      void pre_save(Player n);
+      void welcomeMessage(int n);
 };
 #endif
