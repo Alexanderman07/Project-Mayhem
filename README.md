@@ -46,11 +46,6 @@ We chose to implement the composite design pattern for our Enemy classes. We cho
 
  
   ## Final deliverable
- > All group members will give a demo to the TA/reader during lab time. The TA/reader will check the demo and the project GitHub repository and ask a few questions to all the team members. 
- > Before the demo, you should do the following:
- > * Complete the sections below (i.e. Screenshots, Installation/Usage, Testing)
- > * Plan one more sprint (that you will not necessarily complete before the end of the quarter). Your In-progress and In-testing columns should be empty (you are not doing more work currently) but your TODO column should have a full sprint plan in it as you have done before. This should include any known bugs (there should be some) or new features you would like to add. These should appear as issues/cards on your Project board.
- > * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
  
  ## Screenshots
  ![Screenshot 1](https://i.imgur.com/vy2J19q.png)
@@ -62,7 +57,5 @@ We chose to implement the composite design pattern for our Enemy classes. We cho
  ## Installation/Usage
  All the user needs to do to install the game is to hit the run button located at the top right corner of the screen on replit. Users will be prompted to enter in a name, first name or first and last name, and a category type they would like to use for the entirety of the game. During battle, five action options will be given to the player to interact with the game during a battle against a grunt and an enemy boss. After the player's first encounter with an enemy grunt, they will have the option to explore different buildings at UCR and buy items they will need for battle using the '1', '2', '3', '4', '5', '6', and '7' number keys. Also 'B', 'Y', 'N', 'M', 'S', and 'T' may be used when prompted. 
  ## Testing
- > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
- > The project was tested using incremental unit tests. These unit tests were made to test the functionality of major functions.
  ![testing screenshot](https://i.imgur.com/fiOWbt4.jpg)
  
