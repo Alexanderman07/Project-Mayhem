@@ -14,6 +14,51 @@ ItemBag::ItemBag(){
   liquid_luck_vials = 0;
 }
 
+void ItemBag::getItems(Category c){
+  int choice = 0;
+  string choice2 = "y";
+  cout << "---Item Bag contents---" << endl;
+  cout << "1. Light Heal potions: " << get_light_heal_amount() << endl;
+  cout << "2. Medium Heal potions: " << get_meduim_heal_amount() << endl;
+  cout << "3. Max Heal Potions: " << get_max_heal_amount() << endl;
+  cout << "4. Adderall Count: " << get_adderall_count_amount() << endl;
+  cout << "5. Strength Enhancement Pills: " << get_strength_enhancementPills_amount() << endl;
+  cout << "6. Top Ramen Meals: " << get_top_ramen_meals_amount() << endl;
+  cout << "7. Liquid Luck Vials: " << get_liquid_luck_vials() << endl << endl << endl;
+
+  
+
+  while(choice2 == "y"){
+  cout << "What would you like to use? (Enter a number 1-7)" << endl;
+  cin >> choice;
+  cout << endl;
+
+  if(choice == 1){
+    use_light_potion(c);
+  }
+  else if(choice == 2){
+    use_medium_potion(c);
+  }
+  else if(choice == 3){
+    use_max_potion(c);
+  }
+  else if(choice == 4){
+    use_adderall(c);
+  }
+  else if(choice == 5){
+    use_strength_enhancementPills(c);
+  }
+  else if(choice == 6){
+    top_ramen(c);
+  }
+  else if(choice == 7){
+    use_liquid_luck(c);
+  }
+  cout << "Anything else? (y or n)" << endl;
+  cin >> choice2;
+  }
+  cout << endl << endl;
+}
 
 void ItemBag::use_light_potion(Category c){
   if(light_heal == 0){
