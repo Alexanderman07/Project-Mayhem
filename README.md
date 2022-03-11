@@ -38,7 +38,7 @@ The class diagram depicts the core classes and features of Project Mayhem. As an
   ## Phase III
  ## Updated Class Diagram
 
-![UML Diagram](https://i.imgur.com/gZNxJbU.png)
+![UML Diagram](https://i.imgur.com/HRYJVb0.png)
 
 ## Design Pattern: 
 We chose to implement the composite design pattern for our Enemy classes. We chose this pattern because we are most familiar with this design pattern. The original concept of the “Enemy” seemed to align with the principles of the composite design pattern. This design pattern helped us write better code because it encourages us not to reuse code. 
