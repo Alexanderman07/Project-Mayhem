@@ -65,7 +65,7 @@
 >
 >![UML Diagram](https://i.imgur.com/gZNxJbU.png)
 
->## Design Patterns: 
+>## Design Pattern: 
 >We chose to implement the composite design pattern for our Enemy classes. We chose this pattern because we are most familiar with this design pattern. The original concept of the “Enemy” seemed to align with the principles of the composite design pattern. This design pattern helped us write better code because it encourages us not to reuse code. 
 
 
