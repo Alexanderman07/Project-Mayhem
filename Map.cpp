@@ -54,18 +54,12 @@ while(flag != 1){
     flag++;
    }
   else if(n == 5){
-    cout << "Traveling to Orientation!" << endl;
-    x.set_id(5);
+    cout << "Exiting the map.." << endl;
+    x.set_id(0);
     flag++;
   }
   else{
-    cout << "Not a valid location, Please enter a valid number: " << endl;
-    cout << "1 - Office Hours(shop)" << endl;
-    cout << "2 - Department Head" << endl;
-    cout << "3 - SRC Arena" << endl;
-    cout << "4 - Professor's Office" << endl;
-    cout << "5 - Orientation" << endl;
-    cout << "Enter: ";
+    cout << "Invalid Location. Please try again. If you would not like to travel, please select 5." << endl;
     cin >> n;
       }
     }
@@ -73,9 +67,6 @@ while(flag != 1){
 
   int buildingID;
   buildingID = x.get_ID();
-  if(buildingID == 5){
-    x.welcomeMessage(buildingID);
-  }
   if(buildingID == 4){
     x.welcomeMessage(buildingID);
   }
