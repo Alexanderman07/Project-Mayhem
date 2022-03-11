@@ -5,7 +5,7 @@ using namespace std;
 
 Player:: Player() {
   Player_name = "";
-  player_category.set_category_type(" ");
+  int money = 0;
 }
 
 void Player::set_name(string n){
@@ -16,14 +16,66 @@ string Player::get_name(){
   return Player_name;
 }
 
-void Player::User_guide(){
+void Player::set_money(int n){
+  this->money =n;
+}
 
+int Player::get_money(){
+  return this->money;
+}
+
+
+
+void Player::Open_map(Map& x, Building& y){
+  
+ Map playerMap;
+  std::cout << "You have opened up the map! You can travel to different locations across campus!" << std::endl;
+  std::cout << endl;
+  char input;
+  std::cout << "Press Y to travel to a new location: " << std::endl;
+  std::cin >> input;
+  while(input != 'Y'){
+    cout << "Please enter Y: ";
+    cin >> input;
+  }
+  if(input == 'Y'){
+    x.travel_to(y);  
+  }
+}
+
+
+void Player::Open_menu(){
+  string input = "";
+  
+  cout << "Menu:" << endl;
+  cout << "Type 's' to save or 'h' to get help: ";
+
+  cin >> input;
+  
+  while(input != "s" && input != "h"){
+    cout << "Invalid Input. Try again:" << endl;
+    cin >> input;
+  }
+  
+  cout << endl << endl;
+  
+  if(input == "s"){
+    save();
+  }
+  else{
+    User_guide();
+  }
+  cout << endl << endl; 
+}
+
+void Player::User_guide(){
+  cout << endl;
   cout <<  "Battle System Controls" << endl;
   cout <<  "1 - light attack" << endl;
   cout <<  "2 - medium attack" << endl;
   cout <<  "3 - powerful attack" << endl;
 
-
+  cout << endl;
   cout << "Item Bag Controls" << endl;
   cout << "a - access item bag" << endl;
   cout << "1 - use light potion" << endl;
@@ -33,10 +85,19 @@ void Player::User_guide(){
   cout << "5 - use strength enhancemant pills" << endl;
   cout << "6 - use top ramen" << endl;
   cout << "7 - use liquid luck" << endl;
+
+  cout << endl;
+  cout << "Locations on campus: " << endl;
+  cout << "1 - Office Hours (shop) - Player can buy or sell items." << endl;
+  cout << "2 - Department Head - Fight Department Leaders" << endl;
+  cout << "3 - SRC Arena - Travel to the SRC Arena to gain money and level up!" << endl;
+  cout << "4 - Professor's Office - The Final Boss! " << endl;
+  }
+
+void Player::addMoney(int n){
+  money += n;
 }
 
-int Player::money(int n){
-  int currentMoney = 0;   
-  currentMoney += n;
-  return currentMoney;
+void Player::save(){
+  cout << "Progress saved." << endl;
 }

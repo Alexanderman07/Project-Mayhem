@@ -2,21 +2,24 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-#include "Category.h"
+#include "ItemBag.h"
+#include "Map.h"
 using namespace std;
 
 class Player {
   private:
     string Player_name;
-    Category player_category;
+    int money;
   public:
     Player();
     void set_name(string n);
+    void set_money(int n);
+    int get_money();
     void Open_menu();
     void User_guide();
-    void Open_map();
+    void Open_map(Map& x, Building& y);
     string get_name();
-    int money(int n);
-    void save123(Player n);   
+    void addMoney(int n);
+    void save();   
 };
 #endif
