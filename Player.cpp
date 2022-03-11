@@ -27,20 +27,15 @@ int Player::get_money(){
 
 
 void Player::Open_map(Map& x, Building& y){
-  
- Map playerMap;
   std::cout << "You have opened up the map! You can travel to different locations across campus!" << std::endl;
   std::cout << endl;
   char input;
-  std::cout << "Press Y to travel to a new location: " << std::endl;
+  std::cout << "Press Y to travel to a new location, or press any other button to continue with the story: " << std::endl;
   std::cin >> input;
-  while(input != 'Y'){
-    cout << "Please enter Y: ";
-    cin >> input;
-  }
-  if(input == 'Y'){
+  if(input == 'Y'|| input == 'y'){
     x.travel_to(y);  
   }
+  else{ }
 }
 
 
